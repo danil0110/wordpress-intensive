@@ -5,6 +5,7 @@
 }
 
 .container {
+	position: relative;
 	width: 1140px;
 	margin: 0 auto;
 }
@@ -74,7 +75,8 @@ h2.title {
 	color: #f9bf3b;
 }
 
-.promo .promo_btn {
+.promo .promo_btn,
+.gift .gift_btn {
 	display: block;
 	width: 313px;
 	height: 72px;
@@ -112,12 +114,13 @@ h2.title {
 }
 
 .waiting {
-	height: 604px;
+	min-height: 604px;
 	background: #efefef;
 	padding: 85px 0 75px;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header,
+.finish .finish_header {
 	font-family: Roboto;
 	font-weight: normal;
 	font-size: 30px;
@@ -126,7 +129,12 @@ h2.title {
 	color: #252525;
 }
 
-.waiting .waiting_divider {
+.finish .finish_header {
+	color: #fff;
+}
+
+.waiting .waiting_divider,
+.finish .finish_divider {
 	margin: 18px auto 0;
 	width: 217px;
 	height: 4px;
@@ -134,7 +142,7 @@ h2.title {
 }
 
 .waiting .waiting_subheader {
-    margin-top: 17px;
+	margin-top: 17px;
 	font-family: Roboto;
 	font-weight: normal;
 	font-size: 23px;
@@ -143,25 +151,177 @@ h2.title {
 }
 
 .waiting .waiting_wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 45px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 45px;
 }
 
 .waiting .waiting_wrapper .waiting_item {
-    width: 339px;
-    text-align: center;
+	width: 339px;
+	text-align: center;
 }
 
 .waiting .waiting_wrapper .waiting_item .waiting_img {
-    width: 100%;
+	width: 100%;
 }
 
 .waiting .waiting_wrapper .waiting_item .waiting_descr {
-    margin-top: 33px;
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 21px;
-    color: #4A4A4A;
+	margin-top: 33px;
+	font-family: Roboto;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 21px;
+	color: #4a4a4a;
+}
+
+.optimization {
+    background: url('../images/bg/woman_bg.jpg') 150px 50px no-repeat;
+	min-height: 550px;
+	padding: 102px 0 107px;
+}
+
+.optimization .optimization_header {
+	margin-left: 391px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 28px;
+	text-transform: uppercase;
+	color: #299cbd;
+}
+
+.optimization .optimization_text {
+	margin-top: 25px;
+	margin-left: 391px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 27px;
+	color: #4a4a4a;
+}
+
+.optimization .optimization_text span {
+	font-weight: bold;
+}
+
+.finish {
+	min-height: 447px;
+	padding: 86px 0 79px;
+	background: url('../images/bg/second_bg.jpg') center center/cover no-repeat;
+}
+
+.finish .finish_wrapper {
+	margin-top: 41px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+	width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	background: #b4e2ff;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+	margin-top: 25px;
+	text-align: center;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 20px;
+	color: #efefef;
+}
+
+.gift {
+	min-height: 630px;
+	padding: 85px 0 88px;
+	background: #efefef;
+}
+
+.gift_img {
+	display: block;
+	margin: 0 auto;
+}
+
+.gift .gift_descr {
+	margin-top: 45px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 43px;
+	text-align: center;
+	color: #252525;
+}
+
+.invite {
+	min-height: 512px;
+	padding: 90px 0 50px;
+}
+
+.invite .invite_img {
+	display: block;
+	margin: 0 auto;
+}
+
+.invite .invite_header {
+    margin-top: 36px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #252525;
+}
+
+.invite .invite_date {
+    margin-top: 30px;
+	font-family: Roboto;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #299cbd;
+}
+
+.invite .invite_descr {
+    margin-top: 25px;
+	font-family: Roboto;
+	font-weight: normal;
+	font-size: 23px;
+	line-height: 20px;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.footer {
+    color: #888888;
+    min-height: 170px;
+    padding: 70px 0;
+    background: #1A1A1A;
+}
+
+.footer .links,
+.footer .call {
+    text-align: center;
+}
+
+.footer .call {
+    margin-top: 5px;
+}
+
+.footer .links a {
+    color: #888888;
 }
